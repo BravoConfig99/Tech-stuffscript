@@ -50,14 +50,18 @@ pcs = [
     {"brand": "Acer", "model": "Aspire TC-895", "cpu": "Intel i5-10400", "ram_gb": 12, "storage_gb": 512, "gpu": "Intel UHD 630"},
     {"brand": "Apple", "model": "iMac Pro", "cpu": "Intel Xeon W-2140B", "ram_gb": 32, "storage_gb": 1024, "gpu": "AMD Radeon Pro Vega 56"},
 ]
-try:
-    for pc in pcs:
-        if pc['ram_gb'] < 8:
-            print(f"This PC has less than 8GB of RAM: brand: {pc['brand']}, model: {pc['model']}")
-        else:
-            print(f"This PC has 8GB or more of RAM: brand: {pc['brand']}, model: {pc['model']}")
-except KeyError as e:
-    print(f"Missing key in PC data: {e}")
-except Exception as e:
-    print(f"An error occurred: {e}")
+# try:
+#     for pc in pcs:
+#         if pc['ram_gb'] < 8:
+#             print(f"This PC has less than 8GB of RAM: brand: {pc['brand']}, model: {pc['model']}")
+#         else:
+#             print(f"This PC has 8GB or more of RAM: brand: {pc['brand']}, model: {pc['model']}")
+# except KeyError as e:
+#     print(f"Missing key in PC data: {e}")
+# except Exception as e:
+#     print(f"An error occurred: {e}")
+
+print(len(pcs))
+# above code is to show that fuctions exist behind commands like len() 
+
 
